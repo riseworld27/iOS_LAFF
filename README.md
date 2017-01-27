@@ -1,4 +1,4 @@
-LA Film Festival iPhone app
+Film Festival iPhone app
 ============
 
-This is project for Film Festival.
+[API document](http://filmfest.io/)
