@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="1.2" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14D87p" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Event" representedClassName="Event" elementID="Event" syncable="YES">
+        <attribute name="blogURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="castCredit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colour" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="containerType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countries" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="directors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dirStatement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dubbed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="eventNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventSortTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebookURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="featured" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="filmClipURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmContactsTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmRights" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmWebsite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foreignTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genres" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imdbFilm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="musicURL1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="musicURL2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="musicURL3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mySpaceURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteCredit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="peviewURL1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="peviewURL2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="peviewURL3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoCaption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="premiere" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pressContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printFormat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printSourceAddress1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printSourceCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printSourceContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printSourceEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printSourcePhone1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printSourcePSourceID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="printSourceRecordID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="printSourceState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printSourceZip" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="progCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="runTime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="salesAgent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="screeningOrder" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sectionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="specNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sponsorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="synopsisNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitterURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="screenings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Screening" inverseName="event" inverseEntity="Screening" syncable="YES"/>
+    </entity>
+    <entity name="Screening" representedClassName="Screening" elementID="Screening" syncable="YES">
+        <attribute name="displayDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSaved" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="screeningDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sequence" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ticketDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ticketPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ticketType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="venueCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="venueName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="screenings" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="-299" positionY="-9" width="128" height="960"/>
+        <element name="Screening" positionX="-54" positionY="-9" width="128" height="208"/>
+    </elements>
+</model>

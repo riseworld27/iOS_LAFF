@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="launchscreen_bg" translatesAutoresizingMaskIntoConstraints="NO" id="mhL-Gg-LdP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mhL-Gg-LdP" secondAttribute="height" multiplier="9:16" id="ALA-ZC-DfY"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="launchscreen_texts" translatesAutoresizingMaskIntoConstraints="NO" id="p4T-h0-pab">
+                    <rect key="frame" x="166" y="10" width="237.5" height="202.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="p4T-h0-pab" secondAttribute="height" multiplier="236:201" id="5y9-51-WIF"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="launchscreen_company" translatesAutoresizingMaskIntoConstraints="NO" id="P64-8e-2hi">
+                    <rect key="frame" x="0.0" y="674" width="207" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="P64-8e-2hi" secondAttribute="height" multiplier="197:59" id="ORF-D5-KHH"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.050980392156862744" green="0.066666666666666666" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="p4T-h0-pab" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="8PS-Bj-RPd"/>
+                <constraint firstAttribute="trailing" secondItem="mhL-Gg-LdP" secondAttribute="trailing" id="O3e-n3-COE"/>
+                <constraint firstAttribute="bottom" secondItem="P64-8e-2hi" secondAttribute="bottom" id="QFc-YF-hkp"/>
+                <constraint firstItem="mhL-Gg-LdP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V2K-np-eQg"/>
+                <constraint firstItem="P64-8e-2hi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WJg-8N-MJk"/>
+                <constraint firstItem="mhL-Gg-LdP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YpV-kW-RPu"/>
+                <constraint firstItem="p4T-h0-pab" firstAttribute="height" secondItem="mhL-Gg-LdP" secondAttribute="height" multiplier="0.275" id="kfd-Ij-dfm"/>
+                <constraint firstAttribute="trailing" secondItem="p4T-h0-pab" secondAttribute="trailing" constant="10" id="pLc-yx-Are"/>
+                <constraint firstItem="P64-8e-2hi" firstAttribute="width" secondItem="mhL-Gg-LdP" secondAttribute="width" multiplier="0.5" id="rcX-Hw-zct"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="404" y="445"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launchscreen_bg" width="414" height="736"/>
+        <image name="launchscreen_company" width="197" height="59"/>
+        <image name="launchscreen_texts" width="236" height="201"/>
+    </resources>
+</document>

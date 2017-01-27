@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[FFWeekCell initDatesForMySchedule:]:FFWeekCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FFEventsManager firstScreeningDate]:FFEventsManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "Screening">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
