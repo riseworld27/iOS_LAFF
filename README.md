@@ -1,4 +1,2 @@
-Film Festival iPhone app
+2016 Film Festival iOS app
 ============
-
-[API document](http://filmfest.io/)
